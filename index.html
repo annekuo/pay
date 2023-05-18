@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>How Much do I pay</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="container">
+    <section class="section">
+        <h1 class="title">How Much Do I Pay</h1>
+        <h4 class="title is-4">Enter the amount</h4>
+        <div class="field">
+            <label class="label">Food Price</label>
+            <div class="control">
+            <input class="input" type="number" placeholder="Food you ordered" id="food">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Food Subtotal</label>
+            <div class="control">
+            <input class="input" type="number" placeholder="Food everyone ordered (before tax and tip)" id="total">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Tax</label>
+            <div class="control">
+            <input class="input" type="number" id="tax">
+            </div>
+        </div>
+        <div class="field">
+            <label class="label">Tip</label>
+            <div class="control">
+            <input class="input" type="number" id="tip">
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button class="button is-link" onclick="calculate()">Calculate</button>
+            </div>
+        </div>
+        <div id="results"></div>
+    </section>
+    <section class="section" id="results"></section>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
